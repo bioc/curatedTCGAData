@@ -188,19 +188,20 @@
 
 #' Create a MultiAssayExperiment from specific assays and cohorts
 #'
-#' @description curatedTCGAData assembles data on-the-fly from ExperimentHub
-#' to provide cohesive \linkS4class{MultiAssayExperiment} container objects.
-#' All the user has to do is to provide TCGA disease code(s) and assay types.
-#' It is highly recommended to use the companion package `TCGAutils`,
-#' developed to work with TCGA data specifically from `curatedTCGAData` and
-#' some flat files.
+#' @description curatedTCGAData assembles data on-the-fly from ExperimentHub to
+#'   provide cohesive
+#'   [MultiAssayExperiment][MultiAssayExperiment::MultiAssayExperiment-class]
+#'   container objects. All the user has to do is to provide TCGA disease
+#'   code(s) and assay types. It is highly recommended to use the companion
+#'   package `TCGAutils`, developed to work with TCGA data specifically from
+#'   `curatedTCGAData` and some flat files.
 #'
 #' @details This function will check against available resources in
-#' ExperimentHub. Only the latest runDate ("2016-01-28") is supported.
-#' Use the \code{dry.run = FALSE} to download remote datasets and
-#' build an integrative \linkS4class{MultiAssayExperiment} object.
-#' For a list of 'diseaseCodes', see the \link{curatedTCGAData-package}
-#' help page.
+#'   ExperimentHub. Only the latest runDate ("2016-01-28") is supported. Use the
+#'   \code{dry.run = FALSE} to download remote datasets and build an integrative
+#'   [MultiAssayExperiment][MultiAssayExperiment::MultiAssayExperiment-class]
+#'   object. For a list of 'diseaseCodes', see the
+#'   \link{curatedTCGAData-package} help page.
 #'
 #' @param diseaseCode character() A vector of TCGA cancer cohort codes
 #'     (e.g., `COAD`)
@@ -305,8 +306,10 @@
 #'
 #' @seealso curatedTCGAData-package
 #'
-#' @return a \linkS4class{MultiAssayExperiment} of the specified assays and
-#' cancer codes or informative data.frame of resources when `dry.run` is `TRUE`
+#' @return a
+#'   [MultiAssayExperiment][MultiAssayExperiment::MultiAssayExperiment-class] of
+#'   the specified assays and cancer codes or informative data.frame of
+#'   resources when `dry.run` is `TRUE`
 #'
 #' @examples
 #'

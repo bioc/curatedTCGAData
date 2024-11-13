@@ -36,24 +36,27 @@ before actual download (default TRUE)}
 constructor}
 }
 \value{
-a \linkS4class{MultiAssayExperiment} of the specified assays and
-cancer codes or informative data.frame of resources when \code{dry.run} is \code{TRUE}
+a
+\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment} of
+the specified assays and cancer codes or informative data.frame of
+resources when \code{dry.run} is \code{TRUE}
 }
 \description{
-curatedTCGAData assembles data on-the-fly from ExperimentHub
-to provide cohesive \linkS4class{MultiAssayExperiment} container objects.
-All the user has to do is to provide TCGA disease code(s) and assay types.
-It is highly recommended to use the companion package \code{TCGAutils},
-developed to work with TCGA data specifically from \code{curatedTCGAData} and
-some flat files.
+curatedTCGAData assembles data on-the-fly from ExperimentHub to
+provide cohesive
+\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment}
+container objects. All the user has to do is to provide TCGA disease
+code(s) and assay types. It is highly recommended to use the companion
+package \code{TCGAutils}, developed to work with TCGA data specifically from
+\code{curatedTCGAData} and some flat files.
 }
 \details{
 This function will check against available resources in
-ExperimentHub. Only the latest runDate ("2016-01-28") is supported.
-Use the \code{dry.run = FALSE} to download remote datasets and
-build an integrative \linkS4class{MultiAssayExperiment} object.
-For a list of 'diseaseCodes', see the \link{curatedTCGAData-package}
-help page.
+ExperimentHub. Only the latest runDate ("2016-01-28") is supported. Use the
+\code{dry.run = FALSE} to download remote datasets and build an integrative
+\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment}
+object. For a list of 'diseaseCodes', see the
+\link{curatedTCGAData-package} help page.
 }
 \section{Available Assays}{
 
