@@ -23,6 +23,7 @@ Description: This package provides publicly available data from The Cancer
 License: Artistic-2.0
 BugReports: https://github.com/waldronlab/curatedTCGAData/issues
 Depends:
+    R (>= 4.4.0),
     MultiAssayExperiment
 Imports:
     AnnotationHub,
